@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Obbank</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="goals.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		body {background:white;}
+	</style>
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<script>
+		function startTime() {
+			var today = new Date();
+			var h = today.getHours();
+			var m = today.getMinutes();
+			var s = today.getSeconds();
+			var dt=today.getDate();
+			var mo=today.getMonth();
+			var y=today.getFullYear();
+			var months=["January","February","March","April","May","June","July","August","September","October","November","December"];
+			var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			m = checkTime(m);
+			s = checkTime(s);
+			document.getElementById('txt').innerHTML = days[today.getDay()]+" "+
+			dt+" "+months[mo]+" "+y+" "+
+			h + ":" + m + ":" + s;
+			var t = setTimeout(startTime, 500);
+		}
+		function checkTime(i) {
+			if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+			return i;
+		}
+
+
+	</script>
+</head>
+
+<body onload="startTime()">
+
+	<header>
+		<img src="logowithtext.png" height="60" width="150"></img>
+		<div id="txt"></div><br>
+		<button id="logout" class="btn link" data-toggle="modal" data-target="#myModal">Logout</button>
+	</header>
+
+
+	<main>
+	<div class="container">
+		<div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog">
+			  <!-- Modal content-->
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <button type="button" class="close" data-dismiss="modal">&times;</button>
+				  <h4 class="modal-title">Logout</h4>
+				</div>
+				<div class="modal-body">
+					<p>Are you sure want to logout?</p>
+					<a href="index.html"><button>Yes</button></a>
+					<a href="goals.html"><button>No</button></a>
+				</div>
+			  </div>
+
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-2">
+				<ul id="sidenav">
+					<li><a href="home.html">Home</a></li>
+					<li><a href="goals.html">Goals</a></li>
+					<li><a href="mde.html">Expenses</a></li>
+					<li><a href="report.html">Report</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-10">
+
+				<p class="size">Goals</p>
+
+			</div>
+
+		</div>
+
+
+</div>
+
+<div class="img1">
+
+	<img src="img1.jpg" style="width:100%">
+
+</div>
+
+<div class="newclass">Choose Your Finance Goal</div>
+	<div class="newclass2">
+	We allow our users to personally set their saving goals and plan in order to achieve the goals
+	<p><br><br>
+		Save your money for something that is important to you like further studies in overseas,
+travel the world or even buy a house</p>
+</div>
+
+<div class="cardcolumn">
+
+  <div class="card" style="width: 30rem;">
+  <img class="card-img-top" src="oversea.jpg" alt="Studying overseas">
+  <div class="card-body">
+    <p class="card-text">Study Abroad</p>
+		<a href="test.html" class="btn btn-primary">Plan Now</a>
+  </div>
+</div>
+
+<div class="card" style="width: 30rem;">
+<img class="card-img-top" src="travel.jpg" alt="Travel">
+<div class="card-body">
+  <p class="card-text">Travel the World</p>
+	<a href="test.html" class="btn btn-primary">Plan Now</a>
+ </div>
+</div>
+
+<div class="card" style="width: 30rem;">
+<img class="card-img-top" src="house.jpg" alt="Buying a house">
+<div class="card-body">
+  <p class="card-text">Buy Properties</p>
+	<a href="test.html" class="btn btn-primary">Plan Now</a>
+ </div>
+</div>
+
+</div>
+
+	</main>
+
+	<div id="footer navbar-fixed-bottom">
+		<p id="foot"><br>Copyright &copy 2018 Obbies Group</p>
+		<!--<a href="mailto:contact@obbank.com">Contact us</a>-->
+		
+	</div>
+
+</body>
+
+
+</html>
