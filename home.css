@@ -47,12 +47,6 @@ button{
 	transition-duration:0.2s;
 }
 
-#logo:hover{
-	height:100px;
-	width:250px;
-	transition-duration:1s;
-}
-
 .active{
 	background-color:#2d3192;
 	color:white!important;
@@ -145,6 +139,7 @@ nav{
 
 .container{
 	padding-top:10px;
+	overflow:auto!important;
 }
 
 a{
