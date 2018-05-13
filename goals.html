@@ -42,12 +42,13 @@
 <body onload="startTime()">
 	
 	<header>
-		<a href="home.html"><img id="logo" src="logowithtext.png" height="60" width="150"></img></a>
+		<img id="logo" src="logowithtext.png" height="60" width="150"></img>
 		<div id="txt"></div><br>
 	</header>
 	
 	<nav>
 		<button id="logout" class="btn link" data-toggle="modal" data-target="#myModal">Logout</button>
+		<button id="back" class="btn-link" onclick="location.href='home.html';"><< Back</button>
 	</nav>
 	
 	<main>
@@ -91,9 +92,15 @@
 				</a>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row" id="r2">
 			<div class="jumbotron">
 				<h3>Set your goals</h3>
+				<form>
+					<div>
+						<label>Saving Target:</label>
+						<input type="text"></input>
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>
