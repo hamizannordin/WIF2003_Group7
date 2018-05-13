@@ -74,6 +74,10 @@ header,nav,main,footer,#foot{
 	margin-bottom:5px !important;
 }
 
+#history,#mission,#vision,#services,#team{
+	height:300px!important;
+}
+
 h2{
 	text-align:left !important;
 	padding-left:20px !important;
