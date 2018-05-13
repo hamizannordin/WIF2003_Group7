@@ -120,14 +120,17 @@ label{
 }
 
 #footer{
-	position:absolute;
-	bottom:0;
+	
 	width:95%;
 	text-align:center;
 }
 
 #logout{
 	float:right!important;
+}
+
+#back{
+	float:left!important;
 }
 
 nav{
@@ -151,4 +154,9 @@ a:hover,.jumbotron:hover{
 	background-color:white!important;
 	text-decoration:none!important;
 	transition-duration:1s;
+}
+
+#r2{
+	padding-left:15px!important;
+	padding-right:15px!important;
 }
