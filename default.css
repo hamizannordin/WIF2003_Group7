@@ -60,7 +60,7 @@ a:link{
 	text-decoration:none;
 }
 
-header,nav,main,footer,#foot{
+header,nav,main,footer,#foot,#login{
 	text-align:center;
 }
 
@@ -98,9 +98,6 @@ li.s{
 	display:block;
 }
 
-label{
-	float:left;
-}
 
 #sub{
 	text-align:center;
