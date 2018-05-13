@@ -1,8 +1,16 @@
 body{
-	background-color: black;
+	background-color: #B4BFFF!important;
 	color:gray;
 	padding:25px 20px 25px 20px;
 	font-family: 'Poppins', sans-serif !important;
+	transition-duration:8s;
+}
+
+body:hover{
+	background-color:white!important;
+	padding:25px 20px 25px 20px;
+	font-family: 'Poppins', sans-serif !important;
+	transition-duration:1s;
 }
 
 ul{
@@ -22,6 +30,7 @@ li a{
 	padding-left:15px;
 	padding-right:15px;
 	font-size:20px!important;
+	transition-duration:1s;
 }
 
 button{
@@ -35,13 +44,16 @@ button{
 }
 
 li a:hover,button:hover{
-	color:chocolate! important;
+	background-color:#2d3192!important;
 	text-decoration:none!important;
+	color:white!important;
+	transition-duration:1s;
 }
 
 .active{
-	background-color:#2d3192;
-	color:white!important;
+	color:#2d3192!important;
+	background-color:#B4BFFF!important;
+	transition-duration:1s;
 }
 
 a:link{
@@ -100,5 +112,9 @@ label{
 
 .form-check-label{
 	float:none;
+}
+
+img{
+	float:center!important;
 }
 

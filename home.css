@@ -37,8 +37,8 @@ button{
 	transition-duration:1s;
 }
 
-li a:hover,#logout:hover{
-	color:#B4BFFF!important;
+#logout:hover{
+	
 	text-decoration:none!important;
 	font-size:24px!important;
 }
@@ -73,11 +73,8 @@ nav,main,footer,#foot{
 .jumbotron{
 	background-color:#C5CEFF !important;
 	padding:20px 20px 10px 0px !important;
-}
-
-h2{
-	text-align:left !important;
-	padding-left:20px !important;
+	text-align:center!important;
+	transition-duration:1s;
 }
 
 p{
@@ -125,44 +122,38 @@ label{
 
 #logout{
 	background-color:#B4BFFF;
-	float:right;
+	/*float:right;*/
 }
-
-
 
 #footer{
+	position:absolute;
 	bottom:0;
 	width:95%;
-	
+	text-align:center;
 }
 
-
-h3{
-	margin-left:36%;
+#logout{
+	float:right!important;
 }
 
-h4{
-	margin-left:35%;
-	color:tomato;
+nav{
+	position:sticky;
+	top:0;
+	padding:0px 10px 55px 10px;
+	font-size:20px!important;
 }
 
-footer{
-	
-	overflow:auto;
+.container{
+	padding-top:10px;
 }
 
-#profile{
-	margin-left:36.4%;
-	border-style: solid;
-	border-width: medium;
-    border-color: #666666;
+a{
+	color:black!important;
+	text-decoration:none!important;
 }
 
-.size {
-	font-size: 100px;
-	text-align: left;
-}
-
-#tebal{
-style:small;
+a:hover,.jumbotron:hover{
+	background-color:white!important;
+	text-decoration:none!important;
+	transition-duration:1s;
 }

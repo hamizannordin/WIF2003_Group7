@@ -44,11 +44,14 @@
 	<header>
 		<img id="logo" src="logowithtext.png" height="60" width="150"></img>
 		<div id="txt"></div><br>
-		<button id="logout" class="btn link" data-toggle="modal" data-target="#myModal">Logout</button>
 	</header>
 	
+	<nav>
+		<button id="logout" class="btn link" data-toggle="modal" data-target="#myModal">Logout</button>
+	</nav>
 	
 	<main>
+	
 	<div class="container">
 		<div class="modal fade" id="myModal" role="dialog">
 			<div class="modal-dialog">
@@ -70,7 +73,7 @@
 		</div>
 		
 		<div class="row">
-			<div class="col-sm-2">
+			<!--<div class="col-sm-2">
 				<ul id="sidenav">
 					<li><a href="home.html">Home</a></li>
 					<li><a href="goals.html">Goals</a></li>
@@ -79,25 +82,43 @@
 				</ul>
 			</div>
 			<div class="col-sm-10">
-	
-			<p class="size">Home</p>
-				
+				<h3><b>Welcome to Obbies Group</b></h3>
+				<img id="profile" src="profile.png" >
+				<p><h4><strong>You have logged in as muhdamirdeni</strong></h4></p>
+			</div>-->
+			<div class="col-sm-4">
+				<a href="error.html">
+				<div class="jumbotron">
+					<h3>Welcome, user!</h3><br>
+					<img src="profile.png" height="155px" width="155px"></img>
+					<br><br><br><p>Your last login: DD/MM/YYYY</p><br>
+				</div>
+				</a>
 			</div>
-			
-		</div>
-		
-	
-	
-	
-
-
-		
-	</div>
+			<div class="col-sm-4">
+				<a href="error.html">
+				<div class="jumbotron">
+					<h3>Your current balance is:</h3>
+					<br><h2>RM0.00</h2>
+					<br><br><h3>Your expenditure are:</h3>
+					<br><h2>RM0.00</h2><br>
+				</div>
+				</a>
+			</div>
+			<div class="col-sm-4">
+				<a href="error.html">
+				<div class="jumbotron">
+					<h3>Your saving goals:</h3>
+					<br><h2>RM0.00</h2>
+					<br><br><h3>Expected monthly saving:</h3>
+					<br><h2>RM0.00</h2><br>
+				</div>
+				</a>
+			</div>
+		</div>		
 	</div>
 	</main>
-	<h3><b>Welcome to Obbies Group</b></h3>
-	<img id="profile" src="profile.png" >
-	<p><h4><strong>You have logged in as muhdamirdeni</strong></h4></p>
+	
 	
 	
 	<footer navbar-fixed-bottom>

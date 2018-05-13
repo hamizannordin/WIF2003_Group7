@@ -8,29 +8,26 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<!--<style type="text/css">
-		body {background:#B4BFFF !important;}
-	</style>-->
 	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 </head>
 
 <body>
 	
 	<header>
-		<img id="oblogo" src="logowithtext.png" height="100" width="250"></img>
+		<img src="logowithtext.png" height="100" width="250"></img>
 	</header>
 	
 	<nav>
 		<ul>
-			<li><a class="active" href="index.html">Home</a></li>
-			<li><a href="about.html">About Us</a></li>
+			<li><a href="index.html">Home</a></li>
+			<li><a class="active" href="about.html">About Us</a></li>
 			<li><button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">Login</button></li>
 			<li><a href="register.html">Register</a></li>
 		</ul>
 	</nav>
 	
 	<main>
-		
+	
 		<!-- Modal -->
 		<div class="modal fade" id="myModal" role="dialog">
 			<div class="modal-dialog">
@@ -64,40 +61,53 @@
 			</div>
 		</div>
 		
-		<div id="myCarousel" class="carousel slide" data-ride="carousel">
-		  <!-- Indicators -->
-		  <ol class="carousel-indicators">
-			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-			<li data-target="#myCarousel" data-slide-to="1"></li>
-		  </ol>
-
-		  <!-- Wrapper for slides -->
-		  <div class="carousel-inner">
-			<div class="item active">
-			  <img src="https://image.freepik.com/free-photo/businessman-showing-the-changes-in-the-report_1098-3504.jpg">
-			  <div class="carousel-caption">
-			  Deals
-			  </div>
+		<div class="row">
+			<div class="col-sm-2">
+				<ul id="sidenav">
+					<li><a href="#history">History</a></li>
+					<li><a href="#mission">Mission</a></li>
+					<li><a href="#vision">Vision</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#team">Our Team</a></li>
+				</ul>
 			</div>
-
-			<div class="item">
-			  <img src="https://img3.goodfon.com/wallpaper/big/5/a4/finance-costs-paper-pens.jpg">
-			  <div class="carousel-caption">
-			  Services
-			  </div>
+			<div class="col-sm-10">
+	
+					<div id="history" class="jumbotron">
+						<h2>History</h2>
+						<p>Obbies Group was formed during Week 4, when Dr. Chiam uploaded the assignment instruction</p>
+					</div>
+					<div id="mission" class="jumbotron">
+						<h2>Mission</h2>
+						<p>To become the best financial manager for people worldwide and provide best support for our partners</p>
+					</div>
+					<div id="Vision" class="jumbotron">
+						<h2>Vision</h2>
+						<p>Customers satisfaction is our priority. Let's us worry about your finance, not you.</p>
+					</div>
+					<div id="services" class="jumbotron">
+						<h2>Services</h2>
+						<p>At ObBank, we assist you to:<br>
+							<ul class="s">
+								<li class="s">Set your personal finance goals</li>
+								<li class="s">Manage your daily expenses</li>
+								<li class="s">Generate report on your monthly expenses</li>
+							</ul>
+						</p>
+					</div>
+					<div id="team" class="jumbotron">
+						<h2>Our Team</h2>
+						<p>Wan Muhammad Amir<br>
+						Hamizan Nordin<br>
+						Icak Syazani<br>
+						Shah and Abu 
+						</p>
+					</div>
+				
 			</div>
-		  </div>
-
-		  <!-- Left and right controls -->
-		  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-			<span class="glyphicon glyphicon-chevron-left"></span>
-			<span class="sr-only">Previous</span>
-		  </a>
-		  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-			<span class="glyphicon glyphicon-chevron-right"></span>
-			<span class="sr-only">Next</span>
-		  </a>
 		</div>
+	
+	
 	</main>
 	
 	<footer>

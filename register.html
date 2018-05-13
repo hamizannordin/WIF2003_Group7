@@ -9,7 +9,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<style type="text/css">
-		body {background:white !important;}
+		body {background:#B4BFFF !important;}
 	</style>
 	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 </head>
@@ -23,7 +23,7 @@
 	<nav>
 		<ul>
 			<li><a href="index.html">Home</a></li>
-			<li><a href="aboutUs.html">About Us</a></li>
+			<li><a href="about.html">About Us</a></li>
 			<li><button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">Login</button></li>
 			<li><a class="active" href="register.html">Register</a></li>
 		</ul>
@@ -67,17 +67,17 @@
 		<div class="row">
 			<div class="col-sm-2">
 				<ul id="sidenav">
-					<li><a href="#">Personal</a></li>
-					<li><a href="#">Career</a></li>
-					<li><a href="#">Family</a></li>
-					<li><a href="#">Agreement</a></li>
+					<li><a href="#personal">Personal</a></li>
+					<li><a href="#career">Career</a></li>
+					<li><a href="#family">Family</a></li>
+					<li><a href="#agreement">Agreement</a></li>
 				</ul>
 			</div>
 			<div class="col-sm-10">
 	
 					<div id="personal" class="jumbotron">
 						<h2>Personal</h2>
-						<form class="form-horizontal" action="#">
+						<form class="form-horizontal" action="error.html">
 						  <div class="form-group">
 							<label class="control-label col-sm-2" for="name">Full Name:</label>
 							<div class="col-sm-10">
@@ -124,7 +124,7 @@
 					</div>
 					<div id="career" class="jumbotron">
 						<h2>Career</h2>
-						<form class="form-horizontal" action="#">
+						<form class="form-horizontal" action="error.html">
 							<div class="form-group">
 								<label class="control-label col-sm-2" for="job">Job:</label>
 								<div class="col-sm-5">
@@ -160,7 +160,7 @@
 					</div>
 					<div id="family" class="jumbotron">
 						<h2>Family</h2>
-						<form class="form-horizontal" action="#">
+						<form class="form-horizontal" action="error.html">
 							<div class="form-group">
 								<label class="control-label col-sm-2" for="father">Father's Name:</label>
 								<div class="col-sm-10">
@@ -183,7 +183,7 @@
 					</div>
 					<div id="agreement" class="jumbotron">
 						<h2>Agreement</h2>
-						<form>
+						<form action="error.html">
 						<p id="eula" class="col-sm-offset-1">End-User License Agreement ("Agreement")  
 							<br>========================================
 
