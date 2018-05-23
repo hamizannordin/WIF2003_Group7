@@ -59,12 +59,6 @@ app.post("/register", function(req, res){
 		job				: req.body.job,
 		sector			: req.body.sector,
 		salary			: req.body.salary,
-		//company			: req.body.company,
-		//father			: req.body.father,
-		//mother			: req.body.mother,
-		//partner			: req.body.partner,
-		//agreement		: req.body.agreement,
-		// questions		: req.body.questions,
 		currentSaving	: 0,
 		monthlySaving	: 0,
 		savingGoal		: 0,
@@ -94,37 +88,13 @@ app.post("/login", passport.authenticate("local", {
 	res.redirect("/userhome/"+req.user._id);
 });
 
-// app.get("/login/forgot", function(req, res){
-// 	res.render("forgot");
-// });
-
-// app.post("/login/forgot", function(req, res){
-// 	var questions = req.body.questions;
-// 	User.findOne({username: req.body.username, questions: req.body.questions}, function(err, user){
-// 		if(err){
-// 			console.log(err)
-// 		} else {
-// 			console.log(user._id);
-// 			isLoggedIn = req.isAuthenticated();
-
-// 			res.redirect("/userhome/"+user._id);
-// 		}
-// 	});
-// });
 // **********************user pages********************
-app.get("/userhome/:id",isLoggedIn, function(req, res){
-	var id = req.params.id;
-	User.find({}, function(err, allTransactions){
+app.get("/userhome/:id", isLoggedIn, function(req, res){
+	User.findById(req.params.id).populate("transactions").exec(function(err, user){
 		if(err){
 			console.log(err);
 		} else {
-			User.findById(id).populate("transactions").exec(function(err, user){
-				if(err){
-					console.log(err);
-				} else {
-					res.render("userhome", {transactions: user.transactions, user: user, id: id});
-				}
-			})
+			res.render("userhome", {transactions: user.transactions, user: user, id: req.params.id});
 		}
 	});
 });
@@ -236,17 +206,6 @@ app.get("/userhome/:id/expenses/new",isLoggedIn, function(req, res){
 		}
 	})
 });
-
-
-
-
-
-
-
-
-
-
-
 
 app.get("/logout", function(req, res){
 	req.logout();
